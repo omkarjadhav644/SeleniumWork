@@ -12,6 +12,5 @@ public class ButtonTests extends BaseTest {
         driver.get("https://www.tutorialspoint.com/selenium/practice/buttons.php");
         ButtonPage buttonPage = PageIntantiateFactory.getInstance(ButtonPage.class);
         buttonPage.clickSubmit();
-
     }
 }
