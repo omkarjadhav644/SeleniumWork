@@ -37,10 +37,10 @@ public class CheckboxPage extends BasePage {
     public CheckboxPage checkOrUncheckCheckbox(String checkBoxname) {
 
         WebElement checkOrUncheck = driver.findElement(By.xpath(xPathForCheckbox(checkBoxname)));
-        if(!checkOrUncheck.isSelected())
+        if(!checkOrUncheck.isSelected()&&checkOrUncheck.isEnabled())
             checkOrUncheck.click();
 
-        Assert.assertTrue(checkOrUncheck.isEnabled(),"Checkbox not enabled");
+        Assert.assertTrue(checkOrUncheck.isSelected(),"Checkbox not enabled");
 
         return this;
     }
