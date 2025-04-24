@@ -21,13 +21,5 @@ public class PracticeFormTest extends BaseTest {
         practiceFormPage.setSubject("Practice Form test");
         practiceFormPage.setHobby("Sports");
 
-        Thread.sleep(40000);
-
-
     }
-
-//    @AfterTest
-//    public void tearup(){
-//        driver.close();
-//    }
 }
